@@ -1,0 +1,6 @@
+{
+  "name": "Dhruv Patel Biodata",
+  "description": "An elegant, interactive, and animated biodata website for Patel Dhruv Rakeshbhai, containing detailed family records, educational highlights, physical attributes, a beautiful photo gallery, and an auto-generated PDF biodata sheet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;850&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bold-bg: #FAF9F6;
+  --color-bold-text: #1A1A1A;
+  --color-bold-border: #E5E4DF;
+  --color-bold-accent: #7C6F5D;
+  --color-bold-light: #F2F0EB;
+  --color-bold-neutral: #8C8984;
+
+  --color-gold-50: #FAF9F6;
+  --color-gold-100: #F2F0EB;
+  --color-gold-200: #E5E4DF;
+  --color-gold-300: #C4C2BC;
+  --color-gold-400: #AA9F8F;
+  --color-gold-500: #7C6F5D;
+  --color-gold-600: #635848;
+  --color-gold-700: #4B4133;
+  --color-gold-800: #332B21;
+  --color-gold-900: #1A1A1A;
+  
+  --color-crimson-50: #FFF9F9;
+  --color-crimson-100: #FFF0F0;
+  --color-crimson-200: #FFE1E1;
+  --color-crimson-600: #A83A3A;
+  --color-crimson-800: #712424;
+  --color-crimson-950: #1A1A1A;
+
+  --color-emerald-custom: #1E3F20;
+  
+  /* Precision box shadow styling */
+  --shadow-gold-glow: 0 4px 20px -2px rgba(124, 111, 93, 0.1);
+}
+
+@layer base {
+  body {
+    @apply antialiased text-[#1A1A1A] bg-[#FAF9F6] selection:bg-[#7C6F5D] selection:text-white;
+  }
+}
+
+/* Print simulation styles for premium layout */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
